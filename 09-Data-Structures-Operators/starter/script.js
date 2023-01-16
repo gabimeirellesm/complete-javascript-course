@@ -27,3 +27,31 @@ const restaurant = {
     },
   },
 };
+
+const obj = {
+  a: 1,
+  b: 2,
+  c: [3, 4, 5],
+  d: 'string',
+  e: ['x', 'y', 'z'],
+
+  f: function (teste1, teste2) {
+    return [this.c[teste1], this.e[teste2]];
+  },
+};
+
+let [first, second] = obj.c;
+console.log([first, second]);
+
+[first, second] = [second, first];
+console.log([first, second]);
+
+console.log(obj.f(1, 0));
+
+const arr = [2, 4, [5, 6]];
+
+const [a, , c] = arr;
+console.log([a, c]);
+
+const [h = 10, j = 10, k = 10] = [1, 2];
+console.log([h, j, k]);
