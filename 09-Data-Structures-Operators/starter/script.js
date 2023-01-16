@@ -55,3 +55,56 @@ console.log([a, c]);
 
 const [h = 10, j = 10, k = 10] = [1, 2];
 console.log([h, j, k]);
+
+const udemy = {
+  courseName: 'academia',
+  categories: {
+    java: {
+      hour: 10,
+      level: 'hard',
+    },
+    python: {
+      hour: 20,
+      level: 'easy',
+    },
+    javascript: {
+      hour: 60,
+      level: 'medium',
+    },
+  },
+  company: ['hexa', 'bnp'],
+  duraction: 'two months',
+};
+
+/* const { courseName, company, categories } = udemy;
+console.log({ courseName, company, categories }); */
+/* 
+const { companies = ['a', 'b'], categories: lessons = {} } = udemy;
+console.log(companies, lessons);
+console.log(udemy); */
+
+/* const { fri } = openingHours;
+console.log(fri); */
+
+const arr2 = ['b', 'n', 'm'];
+console.log(arr2);
+console.log(...arr2);
+
+const arr3 = [1, 2, 3];
+const newArr = [...arr3, 4, 5];
+console.log(arr3);
+console.log(newArr);
+
+const apelido = 'gabi';
+const letters = [...apelido, , 'M.'];
+console.log(letters);
+
+let bb;
+const aa = bb ?? 10;
+console.log(aa);
+
+const loop = [1, 2, 3, 4, 5, 6];
+
+for (const numb of loop) {
+  console.log(numb);
+}
