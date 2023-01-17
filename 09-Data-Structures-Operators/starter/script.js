@@ -109,7 +109,7 @@ for (const numb of loop) {
   console.log(numb);
 }
 
-/* const obbj = {
+const obbj = {
   name: 'gabi',
   hobbies: {
     morning: 'gym',
@@ -122,9 +122,9 @@ for (const numb of loop) {
   },
 };
 
-for (const activities of Object.keys(hobbies)) {
+for (const activities of Object.values(obbj.hobbies)) {
   console.log(activities);
-} */
+}
 
 /* const restaurant2 = {
   name: 'Classico Italiano',
